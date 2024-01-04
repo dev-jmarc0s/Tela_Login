@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./login4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.container {
+  width: 330px;
+  height: 350px;
+  background: rgba(67, 65, 65, 0.513);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(222, 233, 219, 0.6980392157);
+  padding: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .infos {
+  height: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 0 15px;
+}
+.container .infos label {
+  width: 100%;
+  height: 44px;
+  position: relative;
+  cursor: pointer;
+}
+.container .infos label input {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 0 12px;
+  width: 100%;
+  height: 28px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -1px 1px 0px 0px white;
+  background: rgba(120, 150, 114, 0.134);
+}
+.container .infos label input:focus {
+  box-shadow: -4px 4px 4px 0px rgba(255, 255, 255, 0.4274509804);
+  border-bottom: none;
+  width: 95%;
+  margin-left: 5%;
+}
+.container .infos label input:focus ~ span {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  bottom: 30px;
+  left: -4px;
+  border-bottom: none;
+  position: absolute;
+}
+.container .infos label input:not(:-moz-placeholder-shown) + span {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  bottom: 30px;
+  left: -4px;
+  border-bottom: none;
+}
+.container .infos label input:not(:placeholder-shown) + span {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  bottom: 30px;
+  left: -4px;
+  border-bottom: none;
+}
+.container .infos label span {
+  position: absolute;
+  bottom: 4px;
+  left: 10px;
+  transition: 0.25s;
+  color: rgba(255, 255, 255, 0.272);
+}
+.container button {
+  width: 100px;
+  height: 50px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 1px solid white;
+  background: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.container button:hover {
+  transform: scale(0.95);
+  background: rgba(67, 65, 65, 0.281);
+}/*# sourceMappingURL=style.css.map */
